@@ -23,7 +23,7 @@ defmodule Tensor.Vector do
     Tensor.new([], [length], identity)
   end
 
-  def new(range = _.._, identity) do
+  def new(range = _.._//_, identity) do
     new(range |> Enum.to_list, identity)
   end
 
